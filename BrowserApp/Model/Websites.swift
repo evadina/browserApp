@@ -12,4 +12,8 @@ import UIKit
 struct Websites{
     var name: String?
     var url: String?
+    
+  
 }
+
+
