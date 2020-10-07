@@ -69,10 +69,13 @@
                     <navigationItem key="navigationItem" id="jSf-RE-gqb">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="GF8-BL-lBK">
                             <connections>
-                                <segue destination="Z4E-Yn-HBO" kind="presentation" id="hMK-Ij-AM7"/>
+                                <segue destination="Z4E-Yn-HBO" kind="presentation" identifier="addWebsite" id="hMK-Ij-AM7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="siteTableView" destination="uDA-8h-dYE" id="0ow-fx-e01"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yK-Yk-teV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

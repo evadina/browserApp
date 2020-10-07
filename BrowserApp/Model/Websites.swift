@@ -7,13 +7,17 @@
 //
 
 import Foundation
-import UIKit
 
-struct Websites{
-    var name: String?
-    var url: String?
+class Websites{
+    var id: UUID
+    var name: String!
+    var url: String!
     
-  
+    init(name: String, url: String) {
+        id = 
+        self.name = name
+        self.url = url
+    }
 }
 
 

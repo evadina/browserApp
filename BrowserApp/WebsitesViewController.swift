@@ -12,11 +12,13 @@ class WebsitesViewController: UITableViewController {
    
     
     
-    
+    @objc weak var siteTableView: UITableView?
     
     var websitesList:[Websites] = []
-    
-
+      
+    func createWebsite(websites: Websites){
+          websitesList.append(websites)
+         }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +55,15 @@ class WebsitesViewController: UITableViewController {
                 }
             }
         }
+        if segue.identifier == "addWebsite"{
+            let popup = segue.destination as! PopUpViewController
+            popup.doneSaving = {
+                self.siteTableView?.reloadData()
+                
+            }
+        }
        
     }
-
+    
+   
 }

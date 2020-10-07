@@ -18,15 +18,22 @@ class PopUpViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
+    var doneSaving: (() -> ())?
+    
+    
+    
     @IBAction func addNewWebsite(_ sender: Any) {
-       dismiss(animated: true, completion: nil)
+        
+        if let doneSaving = doneSaving{
+            doneSaving()
+        }
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelAddingNewWebsite(_ sender: Any) {
         dismiss(animated: true)
-
+        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
