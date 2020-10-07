@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class PopUpViewController: UIViewController {
     
     @IBOutlet weak var popupView: UIView!
@@ -20,10 +18,8 @@ class PopUpViewController: UIViewController {
     
     var doneSaving: (() -> ())?
     
-    
-    
     @IBAction func addNewWebsite(_ sender: Any) {
-        
+        WebsitesFunc.createWebsite(website: Websites(name: newWebsiteName.text!, url: newWebsiteURL.text!))
         if let doneSaving = doneSaving{
             doneSaving()
         }
