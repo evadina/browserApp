@@ -10,12 +10,10 @@ import Foundation
 
 class WebsitesFunc {
     static func createWebsite(website: Websites){
-        
+        Data.websitesList.append(website)
     }
-     
-    static func readWebsite(website: Websites){
-          
-    }
+    
+ 
     
     static func updateWebsite(website: Websites){
         
@@ -26,5 +24,5 @@ class WebsitesFunc {
     }
     
     
-
+    
 }
