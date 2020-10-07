@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+class WebsitesFunc {
+    static func createWebsite(website: Websites){
+        
+    }
+     
+    static func readWebsite(website: Websites){
+          
+    }
+    
+    static func updateWebsite(website: Websites){
+        
+    }
+    
+    static func deleteWebsite(website: Websites){
+        
+    }
+    
+    
+
+}
